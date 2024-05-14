@@ -1,0 +1,14 @@
+1- recursos: laranjas; faca; espremedor (eletrico ou manual); recipiente.
+2- com a faca, parta as laranjas no meio.
+3- ponha uma metade de laranja no espremedor.
+4a- um espremedor manual precisa ser posicionado sobre o recipiente final.
+4b- um espremedo eletrico pode ter reservatorio proprio. 
+5a- aplicar forca no espremedor para extrair o suco, afim de preencher o recipiente.
+5b- ligue o espremedor e mantenha a laranja firme enquanto o aparelho funciona.
+6- quando não houver mais suco na metade de laranja, retire-a do espremedor.
+7- repertir passos 3,4 e 5.
+8- se for necessario, repita o passo 2
+9a- quando o recipiente estiver cheio, remova o espremedor.
+9b- quando o reservatorio estiver cheio, desligue o aparelho e transfira o conteudo para o recipiente final.
+10- limpar.
+11- suco. 
