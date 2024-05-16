@@ -1,0 +1,6 @@
+1- definir o numero inicial
+2- subtrair 1 
+3- se o resultado não for menor ou igual a 1, multiplique o inicial pelo segundo; se for, exibir resultado.
+4- se houve a multiplicação, subtrair 1 do segundo numero
+5- repetir 3
+6- 

@@ -1,0 +1,5 @@
+1- solicitar temperatura em celsius
+2- multiplicar o valor por 9
+3- dividir o resultado por 5
+4- adicionar 32 ao novo resultado
+5- exibir o resultado final, temperatura em fahrenheit

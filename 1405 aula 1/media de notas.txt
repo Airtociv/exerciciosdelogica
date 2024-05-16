@@ -1,0 +1,5 @@
+1- solicitar notas do aluno
+2- somar o valor das notas
+3- dividir pela quantidade de notas
+4- exibir resultado
+(5)- se o resultado for maior do que valor de corte, exibir "aprovado"; se for menor, exibir "reprovado".
