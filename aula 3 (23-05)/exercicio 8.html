@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    let nome = prompt("insira o nome do aluno");
+    let nota1 = parseFloat(prompt("insira a primeira nota do aluno"));
+    let nota2 = parseFloat(prompt("insira a segunda nota do aluno"));
+    let nota3 = parseFloat(prompt("insira a terceira nota do aluno"));
+
+    let media_semestre = (nota1 + nota2 + nota3)/3;
+
+    if(media_semestre >= 7){
+        alert("o aluno " + nome + " foi aprovado");
+    }
+    else if(media_semestre <= 5){
+        alert("o aluno " + nome + " foi reprovado");
+    }
+    else{
+        alert("o aluno " + nome + " está de recuperação");
+    }
+    </script>
+</html>

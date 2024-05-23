@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let peso = parseFloat(prompt("insira o peso em quilogramas da carga de peixes"));
+    let excesso = "ZERO";
+    let multa = "ZERO";
+    if(peso>50){
+    excesso = (peso - 50);
+    multa = (excesso*4);
+    alert("voce excedeu o valor do regulamento em " + excesso + " quilos, e deverá pagar multa de " + multa + " reais");
+    }
+    else{
+        alert("voce excedeu o valor do regulamento em " + excesso + " quilos, e deverá pagar multa de " + multa + " reais");
+    }
+
+</script>
+</html>

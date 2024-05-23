@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    let custo1 = parseFloat(prompt("insira preço de custo do primeiro produto"))
+    let venda1 = parseFloat(prompt("insira o custo de venda do primeiro produto"))
+    if (venda1 > custo1) {
+        alert("no primeiro produto houve lucro de " +(venda1 - custo1)+ " reais")
+    }
+      
+    else if (venda1 == custo1){
+        alert("no primeiro produto não houve lucro nem prejuizo")       
+    }
+
+    else{
+        alert("no primeiro produto houve prejuizo de " +(custo1 - venda1)+ " reais")
+    }
+    
+    let custo2 = parseFloat(prompt("insira preço de custo do segundo produto"));
+    let venda2 = parseFloat(prompt("insira o custo de venda do segundo produto"));
+    if (venda2 > custo2) {
+        alert("no segundo produto houve lucro de " +(venda2 - custo2)+ " reais");
+    }
+      
+    else if (venda2 == custo2){
+        alert("no segundo produto não houve lucro nem prejuizo");    
+    }
+
+    else{
+        alert("no segundo produto houve prejuizo de " +(custo2 - venda2)+ " reais");
+    }
+
+    alert("custo medio de " +((custo1+custo2)/2)+ " reais");
+    alert("valor de venda medio de " +((venda1+venda2)/2)+ " reais");
+</script>
+</html>
