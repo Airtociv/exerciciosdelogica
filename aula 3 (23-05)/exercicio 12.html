@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    let consumo = parseFloat(prompt("insira a quantidade de horas"));
+    let cliente = parseFloat(prompt("cliente tipo 1(residencia),2(comercio) ou 3(industria)?"));
+
+    switch (cliente) {
+        case 1:
+            alert("O custo da conta de luz do mes é de " + (consumo*0.60) + " reais");
+            break;
+    
+            case 2:
+            alert("O custo da conta de luz do mes total é de " + (consumo*0.48) + " reais");
+            break;
+            
+            case 3:
+            alert("O custo da conta de luz do mes total é de " + (consumo*1.29) + " reais");
+            break;
+
+        default:
+            alert("ERRO - escolha APENAS entre os numeros 1,2 ou 3 para definir o tipo de cliente");
+            break;
+    }
+
+</script>
+</html>

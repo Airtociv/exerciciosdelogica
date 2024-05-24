@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+let nome = prompt("insira o nome do estudante");
+let matricula = parseInt(prompt("insira o numero de matricula do mesmo estudante"));
+let primeira_nota = parseFloat(prompt("insira a primeira nota do estudante, use ponto (.) para casas decimais"));
+let segunda_nota = parseFloat(prompt("insira a segunda nota do estudante, use ponto (.) para casas decimais"));
+let terceira_nota = parseFloat(prompt("insira a terceira nota do estudante, use ponto (.) para casas decimais"));
+
+let nota_final = (primeira_nota + segunda_nota + terceira_nota)/3;
+
+
+        if(nota_final >= 8 && nota_final <= 10){
+        alert("O aluno " + nome + ", portador da matricula número " + matricula + ", obteve a nota " + nota_final + ", dessa forma, se qualificando na categoria A.");
+    }
+    else if(nota_final >= 7 && nota_final < 8){
+        alert("O aluno " + nome + ", portador da matricula número " + matricula + ", obteve a nota " + nota_final + ", dessa forma, se qualificando na categoria B.");
+    }
+
+    else if(nota_final >= 6 && nota_final < 7){
+        alert("O aluno " + nome + ", portador da matricula número " + matricula + ", obteve a nota " + nota_final + ", dessa forma, se qualificando na categoria B.");
+    }
+
+    else if(nota_final >= 5 && nota_final < 6){
+        alert("O aluno " + nome + ", portador da matricula número " + matricula + ", obteve a nota " + nota_final + ", dessa forma, se qualificando na categoria B.");
+    }
+
+    else if(nota_final >= 5 && nota_final < 6){
+        alert("O aluno " + nome + ", portador da matricula número " + matricula + ", obteve a nota " + nota_final + " e dessa forma, está REPROVADO.");
+    }
+
+    else{
+        alert("valores das notas não podem ser superiores a 10");
+     
+}
+</script>
+</html>

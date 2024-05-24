@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    let tempo = parseFloat(prompt("insira a quantidade de horas trabalhadas"));
+    let categoria = parseInt(prompt("categoria 1,2 ou 3?"));
+
+    switch (categoria) {
+        case 1:
+            alert("O salario total é de " + (tempo*12) + " reais");
+            break;
+    
+            case 2:
+            alert("O salario total é de " + (tempo*17) + " reais");
+            break;
+            
+            case 3:
+            alert("O salario total é de " + (tempo*25) + " reais");
+            break;
+
+        default:
+            alert("ERRO - escolha APENAS entre os numeros 1,2 ou 3 para a categoria");
+            break;
+    }
+
+</script>
+</html>
