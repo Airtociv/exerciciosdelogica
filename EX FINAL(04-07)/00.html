@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let palavra = []
+let seletor = Math.floor(math.random()* (palavra.length));
+let texto = palavra[seletor].toLowerCase;
+
+function embaralharPalavra() { 
+    let palavraEscolhida = texto.split("");
+    let palavraExibida = palavraEscolhida.sort(Math.floor(math.random()* (palavraExibida.length)-1));
+    
+    return palavraExibida.join(" "); 
+    } 
+   
+   function jogarWordJumble(){
+    let chute = prompt("adivinhe o nome do estado: " + embaralharPalavra());
+    if (chute.toLowerCase == texto) {
+        alert("voce acertou!");
+    } else{
+        alert("voce errou!");
+    }
+
+   }
+</script>
+
+</body>
+</html>

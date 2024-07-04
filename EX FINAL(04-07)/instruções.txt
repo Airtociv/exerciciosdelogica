@@ -1,0 +1,23 @@
+Jogo de Word Jumble
+Seu objetivo é criar um programa em JavaScript que implemente o jogo de Word Jumble. Neste jogo, o programa deve fornecer uma palavra embaralhada e o usuário deve tentar descobrir a palavra original.
+
+Requisitos
+O programa deve ter uma função embaralharPalavra(palavra) que recebe uma palavra como entrada e retorna a palavra embaralhada.
+O programa deve ter uma função jogarWordJumble() que é responsável por executar o jogo:
+Deve escolher uma palavra aleatória de uma lista de palavras predefinidas.
+Deve embaralhar a palavra escolhida usando a função embaralharPalavra().
+Deve exibir a palavra embaralhada ao usuário usando o prompt() e solicitar a resposta.
+Deve verificar se a resposta do usuário está correta e exibir uma mensagem de feedback usando o alert().
+O programa deve ser executado quando a função jogarWordJumble() for chamada.
+
+Dicas
+Você pode usar o método split() para transformar a palavra em um array de letras, o método sort() para embaralhar as letras e o método join() para reconstruir a palavra.
+Você pode usar o Math.random() para escolher uma palavra aleatória da lista.
+Você pode usar o toLowerCase() para comparar as respostas de forma insensível a maiúsculas e minúsculas.
+
+Exemplo de Entrada e Saída
+Palavra embaralhada: sgnid
+Resposta do usuário: dings
+Saída: Parabéns! Você acertou!Palavra embaralhada: carro
+Resposta do usuário: occar
+Saída: Ops, a resposta correta é "carro".
