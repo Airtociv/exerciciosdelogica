@@ -16,22 +16,30 @@ let perguntas = [
     "Quais são as capitais dos estados da Região Sul do Brasil?",
     "Quais são as regiões mais industrializadas do Brasil?"];
 
-let respostas = [["Nordeste","Norte","Sudeste","Centro-Oeste","Sul"],
-                 ["Norte","Nordeste","Centro-Oeste","Sudeste","Sul"],
-                 ["Curitiba, Florianópolis e Porto Alegre","Cuiabá, Goiânia e Campo Grande","Manaus, Belém e Porto Velho","Rio de Janeiro, São Paulo e Vitória","Salvador, Recife e Fortaleza"],
-                 ["Sudeste e Sul","Nordeste e Centro-Oeste","Sudeste e Nordeste","Norte e Sul","Centro-Oeste e Sudeste"]
+let respostas = [["Nordeste","\nNorte","\nSudeste","\nCentro-Oeste","\nSul."],
+                 ["Norte","\nNordeste","\nCentro-Oeste","\nSudeste","\nSul."],
+                 ["Curitiba, Florianópolis e Porto Alegre","\nCuiabá, Goiânia e Campo Grande","\nManaus, Belém e Porto Velho","\nRio de Janeiro, São Paulo e Vitória","\nSalvador, Recife e Fortaleza."],
+                 ["Sudeste e Sul","\nNordeste e Centro-Oeste","\nSudeste e Nordeste","\nNorte e Sul","\nCentro-Oeste e Sudeste."]
                 ];
 
 let correta = respostas[rodada - 1];
 
+alert("bem vindo");
+fluxo();
+alert("voce fez " + registrar() + " pontos")
 
+function fluxo(){
+ for (rodada = 1; rodada < 4; rodada++){
+    perguntar(rodada)
+ }
+}
 
-function perguntar(rodada){
+function perguntar(i){
   let escolhida =  prompt("a pergunta é: " + perguntas[rodada - 1] + ".\nas opções de resposta são: \n" +  respostas[rodada-1]);
     return escolhida;
 };
-function confirmar(rodada){
-    if(perguntar(rodada) === correta[0]){
+function confirmar(i){
+    if(perguntar(i) === correta[0]){
         alert("sua resposta está correta");
         return true;
     }
@@ -40,10 +48,10 @@ function confirmar(rodada){
         return false;
     }
 };
-function registrar(rodada){
+function registrar(i){
     for (let pontos = 0; confirmar(rodada) = true ; pontos++);
      return pontos 
-}
+};
 
 
 </script>
