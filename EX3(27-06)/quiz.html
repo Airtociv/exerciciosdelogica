@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let rodada = 0;
+let perguntas = [
+    "Qual é a região brasileira possui o maior número de estados?",
+    "A maior parte da Floresta Amazônica está localizada em qual região?",
+    "Quais são as capitais dos estados da Região Sul do Brasil?",
+    "Quais são as regiões mais industrializadas do Brasil?"];
+
+let respostas = [["Nordeste","Norte","Sudeste","Centro-Oeste","Sul"],
+                 ["Norte","Nordeste","Centro-Oeste","Sudeste","Sul"],
+                 ["Curitiba, Florianópolis e Porto Alegre","Cuiabá, Goiânia e Campo Grande","Manaus, Belém e Porto Velho","Rio de Janeiro, São Paulo e Vitória","Salvador, Recife e Fortaleza"],
+                 ["Sudeste e Sul","Nordeste e Centro-Oeste","Sudeste e Nordeste","Norte e Sul","Centro-Oeste e Sudeste"]
+                ];
+
+let correta = respostas[rodada - 1];
+
+
+
+function perguntar(rodada){
+  let escolhida =  prompt("a pergunta é: " + perguntas[rodada - 1] + ".\nas opções de resposta são: \n" +  respostas[rodada-1]);
+    return escolhida;
+};
+function confirmar(rodada){
+    if(perguntar(rodada) === correta[0]){
+        alert("sua resposta está correta");
+        return true;
+    }
+    else{
+        alert("sua resposta está errada");
+        return false;
+    }
+};
+function registrar(rodada){
+    for (let pontos = 0; confirmar(rodada) = true ; pontos++);
+     return pontos 
+}
+
+
+</script>
+
+</body>
+</html>
